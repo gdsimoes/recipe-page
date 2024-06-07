@@ -1,18 +1,56 @@
 /* Variables */
 :root {
-    /* Primary */
+    /* Primary Colors */
     --nutmeg: hsl(14, 45%, 36%);
     --dark-raspberry: hsl(332, 51%, 32%);
 
-    /* Neutral */
+    /* Neutral Colors */
     --white: hsl(0, 0%, 100%);
     --rose-white: hsl(330, 100%, 98%);
     --eggshell: hsl(30, 54%, 90%);
     --light-grey: hsl(30, 18%, 87%);
     --wenge-brown: hsl(30, 10%, 34%);
     --dark-charcoal: hsl(24, 5%, 18%);
+
+    /* Sizes */
+    --main-height: max(100svh, 2043px);
 }
 
 html {
     font-family: "Outfit", sans-serif;
+}
+
+body {
+    min-height: var(--main-height);
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--eggshell);
+}
+
+/* Footer */
+footer.attribution {
+    position: absolute;
+    bottom: 20px;
+
+    font-size: 11px;
+    color: var(--wenge-brown);
+    text-align: center;
+}
+
+footer.attribution a {
+    color: inherit;
+    opacity: 0.9;
+    text-decoration: none;
+}
+
+/* Hover effects */
+@media (hover: hover) and (pointer: fine) {
+    footer.attribution a:hover {
+        text-decoration: underline;
+    }
 }
