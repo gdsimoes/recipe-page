@@ -13,7 +13,7 @@
     --dark-charcoal: hsl(24, 5%, 18%);
 
     /* Sizes */
-    --main-height: max(100svh, 2043px);
+    --footer-buffer: 50px;
 }
 
 html {
@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    min-height: var(--main-height);
+    min-height: calc(100svh - var(--footer-buffer));
     position: relative;
 
     display: flex;
@@ -30,12 +30,18 @@ body {
     align-items: center;
 
     background-color: var(--eggshell);
+    /* Margin needed to reserve room for the footer */
+    margin-bottom: var(--footer-buffer);
+}
+
+main {
+    border: 1px solid black;
 }
 
 /* Footer */
 footer.attribution {
     position: absolute;
-    bottom: 20px;
+    bottom: calc(-1em - var(--footer-buffer) / 2);
 
     font-size: 11px;
     color: var(--wenge-brown);
