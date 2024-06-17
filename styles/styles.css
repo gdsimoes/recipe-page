@@ -1,3 +1,101 @@
-html {
+/* Variables */
+:root {
+    /* Primary Colors */
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
+
+    /* Neutral Colors */
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+
+    /* Sizes */
+    --footer-buffer: 50px;
+    --main-width: 375px;
+}
+
+body {
+    min-height: calc(100svh - var(--footer-buffer));
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--eggshell);
+
+    /* Margin needed to reserve room for the footer */
+    margin-bottom: var(--footer-buffer);
+
+    /* Main font and color */
     font-family: "Outfit", sans-serif;
+    color: var(--wenge-brown);
+}
+
+/* Typography */
+h1 {
+    font-family: "Young Serif", serif;
+    font-size: 2.25rem;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--dark-charcoal);
+}
+
+h2 {
+    font-family: "Young Serif", serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: var(--nutmeg);
+    line-height: 1;
+}
+
+aside h2 {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--dark-raspberry);
+}
+
+tr td:last-child {
+    color: var(--nutmeg);
+    font-weight: 700;
+}
+
+main {
+    /* For debugging */
+    outline: 1px solid black;
+
+    padding: 40px 32px;
+    width: var(--main-width);
+}
+
+.hero-wrapper {
+    margin: -40px -32px 0 -32px;
+}
+
+/* Footer */
+footer.attribution {
+    position: absolute;
+    bottom: calc(-1em - var(--footer-buffer) / 2);
+
+    font-size: 11px;
+    color: var(--wenge-brown);
+    text-align: center;
+}
+
+footer.attribution a {
+    color: inherit;
+    opacity: 0.9;
+    text-decoration: none;
+}
+
+/* Hover effects */
+@media (hover: hover) and (pointer: fine) {
+    footer.attribution a:hover {
+        text-decoration: underline;
+    }
 }
