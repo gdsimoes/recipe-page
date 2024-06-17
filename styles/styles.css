@@ -65,16 +65,24 @@ tr td:last-child {
     font-weight: 700;
 }
 
+/* Main Layout */
 main {
-    /* For debugging */
-    outline: 1px solid black;
-
     padding: 40px 32px;
     width: var(--main-width);
+
+    background-color: var(--white);
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .hero-wrapper {
-    margin: -40px -32px 0 -32px;
+    margin: -40px -32px 40px -32px;
+}
+
+h1 {
+    margin-bottom: 24px;
 }
 
 /* Footer */
