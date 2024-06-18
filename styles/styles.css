@@ -1,4 +1,6 @@
-/* Variables */
+/****************
+    Variables 
+****************/
 :root {
     /* Primary Colors */
     --nutmeg: hsl(14, 45%, 36%);
@@ -36,7 +38,9 @@ body {
     color: var(--wenge-brown);
 }
 
-/* Typography */
+/*****************
+    Typography 
+*****************/
 h1 {
     font-family: "Young Serif", serif;
     font-size: 2.25rem;
@@ -65,7 +69,10 @@ tr td:last-child {
     font-weight: 700;
 }
 
-/* Main Layout */
+/********************
+    Mobile Layout 
+********************/
+
 main {
     padding: 40px 32px;
     width: var(--main-width);
@@ -83,6 +90,39 @@ main {
 
 h1 {
     margin-bottom: 24px;
+}
+
+/* Unordered lists style */
+ul {
+    padding-left: 21.5px;
+}
+
+ul li {
+    padding-left: 18.5px;
+}
+
+ul li > span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+::marker {
+    color: var(--dark-raspberry);
+}
+
+/* Aside */
+aside {
+    background-color: var(--rose-white);
+    padding: 24px;
+    border-radius: 12px;
+}
+
+aside h2 {
+    margin-bottom: 16px;
+}
+
+aside li:not(:last-child) {
+    margin-bottom: 8px;
 }
 
 /* Footer */
