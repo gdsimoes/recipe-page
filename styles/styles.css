@@ -92,7 +92,7 @@ h1 {
     margin-bottom: 24px;
 }
 
-/* Unordered lists style */
+/* Unordered Lists */
 ul {
     padding-left: 21.5px;
 }
@@ -123,6 +123,13 @@ aside h2 {
 
 aside li:not(:last-child) {
     margin-bottom: 8px;
+}
+
+/* Line */
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--light-grey);
 }
 
 /* Footer */
