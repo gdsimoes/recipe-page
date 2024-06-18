@@ -101,6 +101,10 @@ ul li {
     padding-left: 18.5px;
 }
 
+ul li:not(:last-child) {
+    margin-bottom: 8px;
+}
+
 ul li > span {
     display: inline-block;
     vertical-align: middle;
@@ -121,8 +125,9 @@ aside h2 {
     margin-bottom: 16px;
 }
 
-aside li:not(:last-child) {
-    margin-bottom: 8px;
+/* Section */
+h2 {
+    margin-bottom: 24px;
 }
 
 /* Line */
