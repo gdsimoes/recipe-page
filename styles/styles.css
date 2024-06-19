@@ -98,16 +98,19 @@ h1 {
     margin-bottom: 24px;
 }
 
-/* Unordered Lists */
-ul {
+/* Lists */
+ul,
+ol {
     padding-left: 21.5px;
 }
 
-ul li {
+ul li,
+ol li {
     padding-left: 18.5px;
 }
 
-ul li:not(:last-child) {
+ul li:not(:last-child),
+ol li:not(:last-child) {
     margin-bottom: 8px;
 }
 
