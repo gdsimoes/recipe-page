@@ -23,7 +23,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
--   [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/simple-solution-using-css-flexbox-DfaZngYsZW)
+-   [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/simple-solution-using-variable-fonts-AD5AZ_MZM-)
 -   [Live Site](https://gdsimoes.github.io/recipe-pagefro)
 
 ## My process
