@@ -225,6 +225,12 @@ footer.attribution a {
         padding: 40px;
         border-radius: 24px;
     }
+
+    .hero-wrapper {
+        margin: 0 0 40px 0;
+        border-radius: 12px;
+        overflow: hidden;
+    }
 }
 
 /* Hover effects */
