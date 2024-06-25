@@ -150,6 +150,46 @@ h2 {
     background-color: var(--light-grey);
 }
 
+/* Table */
+table {
+    margin-top: 12px;
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+tr:not(:last-child) th,
+tr:not(:last-child) td {
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+tr:last-child th,
+tr:last-child td {
+    padding-top: 11px;
+}
+
+tr:first-child th,
+tr:first-child td {
+    padding-top: 12px;
+}
+
+tr + tr {
+    border-top: 1px solid var(--light-grey);
+}
+
+th {
+    text-align: left;
+    font-weight: 400;
+
+    padding-left: 32px;
+    width: 147.5px;
+}
+
+td {
+    padding-left: 16px;
+}
+
 /* Footer */
 footer.attribution {
     position: absolute;
