@@ -231,6 +231,15 @@ footer.attribution a {
         border-radius: 12px;
         overflow: hidden;
     }
+
+    aside {
+        padding: 28px;
+    }
+
+    aside > ul > li:first-child {
+        /* This is necessary to take into account the space created by the span */
+        margin-bottom: 6px;
+    }
 }
 
 /* Hover effects */
