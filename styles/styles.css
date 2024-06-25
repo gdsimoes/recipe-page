@@ -240,6 +240,14 @@ footer.attribution a {
         /* This is necessary to take into account the space created by the span */
         margin-bottom: 6px;
     }
+
+    br {
+        display: none;
+    }
+
+    th {
+        width: 320px;
+    }
 }
 
 /* Hover effects */
