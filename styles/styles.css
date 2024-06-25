@@ -206,6 +206,27 @@ footer.attribution a {
     text-decoration: none;
 }
 
+/*********************
+    Desktop Layout
+*********************/
+
+/* Variables */
+@media (min-width: 800px) {
+    :root {
+        --main-width: 736px;
+        --footer-buffer: 123px;
+    }
+
+    body {
+        margin-block: var(--footer-buffer);
+    }
+
+    main {
+        padding: 40px;
+        border-radius: 24px;
+    }
+}
+
 /* Hover effects */
 @media (hover: hover) and (pointer: fine) {
     footer.attribution a:hover {
